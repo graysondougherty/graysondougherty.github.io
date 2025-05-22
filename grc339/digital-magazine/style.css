@@ -1,10 +1,16 @@
 /*CSS document*/
 
+
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 img {
     width: 100%;
     display: block;
+}
+
+body {
+    background-image: url(cloudbackground.png);
+    background-color: #e1e1e1; 
 }
 
 div.container, div.home-container {
@@ -17,7 +23,7 @@ body a {
 }
 
 h1 {
-    max-width: 7em;
+    max-width: 30em;
     margin: 0.3rem;
 }
 
@@ -26,8 +32,8 @@ h2 a {
 }
 
 h2 {
-    font-family: serif;
-    color: #4e6992;
+    font-family: "gothicus";
+    color: #1c1c1c;
     text-decoration: none;
     font-size: 1.7em;
     font-weight: bold;
@@ -35,8 +41,8 @@ h2 {
 }
 
 section.mainstory h2 {
-    font-family: serif;
-    color: #4e6992;
+    font-family: "gothicus";
+    color: #1c1c1c;
     text-decoration: none;
     font-size: 2.8em;
     font-weight: bold;
@@ -45,8 +51,9 @@ section.mainstory h2 {
 
 nav {
     margin: 1rem 0.3rem 1rem 0.3rem;
-    color: #4e6992;
-    font-size: 1em;
+    color: #1c1c1c;
+    font-size: 1.3em;
+    font-family: "gothicus";
     font-weight: bold;
     text-decoration: none;
 }
@@ -65,19 +72,17 @@ li {
     list-style:none;
 }
 
-p, nav {
-    font-family: sans-serif;
-}
 
 p {
+    font-family:"acumin-variable";
     margin: 0.3rem 0.3rem 2rem 0.3rem;
-    color: #000000;
+    color: #1c1c1c;
     font-size: 1em;
     text-decoration: none
 }
 
 figcaption {
-    color: #606060;
+    color: #1c1c1c;
     font-style: italic;
     margin: 0.3rem 0.3rem 1em 0.3rem;
     font-family: sans-serif;
@@ -86,7 +91,7 @@ figcaption {
 
 aside {
     padding: 1em;
-    background-color: #d0ccf4;
+    background-color: #e1e1e1;
 }
 
 h2.aside {
@@ -98,7 +103,7 @@ h2.aside {
 
 h2.mainstory {
     margin: 1em 0.3rem 0.3em 0.3rem;
-    color: #4e6992;
+    color: #006aa7;
     font-size: 2.8em;
     font-weight: bold;
     text-decoration: none;
@@ -106,15 +111,16 @@ h2.mainstory {
 }
 
 footer {
-    background-color: #4e6992;
-    color: #ffffff;
+    background-color: #006AA7;
+    color: #FECC02;
     padding: 0.3em;
-    font-family: sans-serif;
+    font-family: "acumin-variable";
     box-sizing: border-box;
 }
 
 h2.third {
-    border-top: #4e6992 solid 1px;
+    border-top: 20px solid transparent;
+    border-image: url(borderline.png) 85 round;
     padding-top: 0.6em;
     font-size: 1.2em;
     margin: 0.5rem 0.3rem 0rem 0.3rem;
@@ -205,7 +211,7 @@ h2.third {
 
     section.mainstory a figure {
         flex: 1 0 12em;
-        background: #ff0;
+        background: #e1e1e1;
         display: flex;
     }
 
@@ -233,7 +239,7 @@ h2.third {
 
     section.secondstory a figure {
         flex: 1 0 12em;
-        background: #ff0;
+        background: #e1e1e1;
         display: flex;
     }
 
@@ -249,3 +255,41 @@ h2.third {
         flex: 0 0 4em;
     }
 }
+
+section.mainstory figure {
+    border: 40px solid transparent;
+    border-image: url(flagborder.png) 80 round;
+}
+
+section.secondstory figure {
+    border: 20px solid transparent;
+    border-image: url(flagborder.png) 80 round;
+}
+
+
+
+
+
+@import url("https://p.typekit.net/p.css?s=1&k=kws5cek&ht=tk&f=44557.44558.51975&a=126303374&app=typekit&e=css");
+
+@font-face {
+font-family:"gothicus";
+src:url("https://use.typekit.net/af/bd7245/00000000000000007735c847/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/bd7245/00000000000000007735c847/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/bd7245/00000000000000007735c847/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"gothicus-roman";
+src:url("https://use.typekit.net/af/e648b3/00000000000000007735c848/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/e648b3/00000000000000007735c848/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/e648b3/00000000000000007735c848/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"acumin-variable";
+src:url("https://use.typekit.net/af/80814c/0000000000000000774be2a6/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/80814c/0000000000000000774be2a6/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/80814c/0000000000000000774be2a6/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:100 900;font-stretch:normal;
+}
+
+.tk-gothicus { font-family: "gothicus",serif; }
+.tk-gothicus-roman { font-family: "gothicus-roman",serif; }
+.tk-acumin-variable { font-family: "acumin-variable",sans-serif; }
