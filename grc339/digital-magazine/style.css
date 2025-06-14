@@ -395,6 +395,10 @@ button {
         background-image: url(cloudbackgroundinvert.png);
         background-color: #1c1c1c; 
     }
+
+    h1 a {
+        content: url('drainlogo_dark.svg');
+    }
      
     h2 {
         color: #e1e1e1;
